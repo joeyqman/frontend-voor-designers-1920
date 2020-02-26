@@ -8,4 +8,4 @@ Voor het vak Frontend voor designers kregen we 3 weken om de eerste opdracht uit
 Ik begon met het schetsen van een layout. Dit gaf weer hoe ik de site voor ogen had. Ik had al snel een idee om een soort collapisble toe te voegen die de details van het huis bevatten. 
 
 Inline-style: 
-![schets 1](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![schets 1](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/schets%201.png)
