@@ -39,7 +39,8 @@ Door "echte" tekst toe te voegen kreeg ik een beter beeld. Voor de details wilde
 
 De site moest naar mijn mening simpel eruit zien. Hoewel ik de wit en grijze kleuren vrij somber vond ogen. Hierom heb ik een blauw-groene achtergrond toegevoegd achter de H1. 
 
-![scherm 4](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen5.png)
+![scherm 4](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen4.png)
+https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen4.png
 
 **Principe 4**
 Om principe 4 te verwerken heb ik een functie toegevoegd waarbij de gebruiker het overzicht ander kan indelen. Bij de default state staan de huizen in een lijst onder elkaar. De gebruiker kan er ook voor kiezen om de huizen in kolommen te zien. Dit heb ik gedaan met de column-count. Hierbij geef je de gebruiker de keuze om het overzicht naar zijn wens te veranderen. 
@@ -47,7 +48,7 @@ Om principe 4 te verwerken heb ik een functie toegevoegd waarbij de gebruiker he
 Om de huizen gedetailleerd te bekijken kan de gebruiker op de "tab" klikken waarna de content uitklapt en je details kunt zien van het huis. De gebruiker heeft ook de mogelijkheid om dit weer in te klappen wanneer het niet meer relevant is.
 
 **derde poging/versie** 
-![scherm 5](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen4.png)
+![scherm 5](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen5.png)
 
 **derde poging/versie** 
 ![scherm 6](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen7.2.png)
