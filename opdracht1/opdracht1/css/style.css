@@ -1,0 +1,266 @@
+html {
+    box-sizing: border-box;
+    /* https://css-tricks.com/box-sizing/ */
+    background: #eee;
+    /* background: url("../img/flagF4D.png") center no-repeat;
+    background-attachment: fixed; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 65%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+
+
+@media (max-width:50em) {
+    details > div > div.img-gallerij {
+        display: none;
+    }
+}
+
+h1 {
+    background-color: #83a69b;
+    padding: 1vh;
+}
+
+.knoppen {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.knoppen button {
+    padding: 0.7vw;
+}
+
+.knoppen button img {
+    width: 1.5vw;
+    height: auto;
+}
+
+div .content-open img {
+    width: 10vw;
+    height: auto;
+}
+
+div p {
+    width: 100%;
+}
+
+div p,
+h2 {
+    text-align: left;
+}
+
+h2 {
+    margin: 0;
+}
+
+li:not(.knoppen, .vakjes-overzicht-li) {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 1vw;
+}
+
+
+.lijstcontent li {
+    margin-bottom: 2vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details {
+    width: 100%;
+}
+
+details .vet {
+    font-weight: bold;
+}
+
+/*bron= https://stackoverflow.com/questions/38213329/how-to-add-css3-transition-with-html5-details-summary-tag-reveal */
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px
+    }
+}
+
+/* einde bron */
+
+
+div.content-open {
+    display: flex;
+
+}
+
+details:hover {
+    box-shadow: 0px 10px 26px -12px rgba(0, 0, 0, 0.36);
+    transition: box-shadow 0.3s ease-in-out;
+
+
+}
+
+
+div.tekst-open {
+    width: 100%;
+}
+
+details > summary > div > img.plus {
+    height: 1vw;
+    width: auto;
+    float: right;
+    margin-left: 0.5vw;
+}
+
+div.content-open p,
+h2 {
+    padding-left: 1vw;
+
+}
+
+div.content {
+    margin-top: 2vh;
+    border-top: 1px solid grey;
+}
+
+div.informatie {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid grey;
+    margin-top: 1vh;
+}
+
+div.informatie p {
+    width: 50%;
+    margin-right: 6vw;
+}
+
+
+
+/*bron= https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 40%;
+    padding: 0 4px
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* einde bron */
+
+details {
+    padding: 1vh;
+    display: flex;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+}
+
+.woningdetails img {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.iconen {
+    width: 2vw;
+    height: auto;
+
+}
+
+.detail-iconen {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*vakjes*/
+
+@media screen and (max-width: 900px) {
+        {
+        column-count: 2;
+    }
+}
+
+div.vakcontent {
+    display: none;
+}
+
+ul.vakjes-overzicht {
+    column-count: 3;
+}
+
+li:not(.knoppen) {
+    background-color: white;
+}
+
+div.content-open-vakjes {
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+div.content-open-vakjes:hover {
+    box-shadow: 0px 10px 26px -12px rgba(0, 0, 0, 0.36);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+div.content-open-vakjes img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+    width: 20vw;
+    height: auto;
+}
+
+div.vakcontent h2 {
+    text-align: center;
+}
+
+div.vakcontent p {
+    text-align: center;
+}
