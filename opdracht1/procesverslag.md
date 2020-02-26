@@ -47,10 +47,10 @@ Om principe 4 te verwerken heb ik een functie toegevoegd waarbij de gebruiker he
 
 Om de huizen gedetailleerd te bekijken kan de gebruiker op de "tab" klikken waarna de content uitklapt en je details kunt zien van het huis. De gebruiker heeft ook de mogelijkheid om dit weer in te klappen wanneer het niet meer relevant is.
 
-**toepassen principe 4.1** 
+**toepassen principe 4: lijst** 
 ![scherm 5](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen5.png)
 
-**toepassen principe 4.2** 
+**toepassen principe 4: kolommen** 
 ![scherm 6](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen7.2.png)
 
 **Principe**
@@ -58,13 +58,11 @@ Voor principe 11 heb ik gekeken naar andere sites. Hierbij heb ik gekeken welke 
 
 Het contrast tussen de controle van de gebruiker en de site vond ik nog te klein. Hierdoor heb ik bij het hoveren een schaduw onder de lijstelementen toegevoegd. Hierdoor ziet de gebruiker zonder dat het te overheersend is waar zijn muis cursor is.
 
-**toepassen principe 11.1** 
+**toepassen principe 11: strong** 
 ![scherm 7](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen6.png)
 
-**toepassen principe 11.2** 
+**toepassen principe 11: shadow-hover** 
 ![scherm 8](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/scherm8.png)
-
-
 
 
 
