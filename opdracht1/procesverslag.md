@@ -47,11 +47,20 @@ Om principe 4 te verwerken heb ik een functie toegevoegd waarbij de gebruiker he
 
 Om de huizen gedetailleerd te bekijken kan de gebruiker op de "tab" klikken waarna de content uitklapt en je details kunt zien van het huis. De gebruiker heeft ook de mogelijkheid om dit weer in te klappen wanneer het niet meer relevant is.
 
-**derde poging/versie** 
+**toepassen principe 4.1** 
 ![scherm 5](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen5.png)
 
-**derde poging/versie** 
+**toepassen principe 4.2** 
 ![scherm 6](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen7.2.png)
+
+**Principe**
+Voor principe 11 heb ik gekeken naar andere sites. Hierbij heb ik gekeken welke elementen opvallen en welke minder. Vrijwel alle sites hebben de straatnaam groot en bovenaan. Dit heb ik met een h2 toegepast. De kopjes op de detailpagina heb ik door middel van strong meer laten opvallen. Om te vermijden dat alles 1 blok tekst wordt heb ik iconen toegevoegd om de kenmerken van het huis op te lichten. 
+
+**toepassen principe 11** 
+![scherm 7](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen6.png)
+
+
+
 
 
 
