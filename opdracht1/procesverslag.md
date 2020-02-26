@@ -7,5 +7,13 @@ Voor het vak Frontend voor designers kregen we 3 weken om de eerste opdracht uit
 
 Ik begon met het schetsen van een layout. Dit gaf weer hoe ik de site voor ogen had. Ik had al snel een idee om een soort collapisble toe te voegen die de details van het huis bevatten. 
 
-Inline-style: 
+Schets 1: 
 ![schets 1](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/schets%201.png)
+
+Ik heb geprobeerd om de collapsible toe te voegen door middel van javascript. Dit bleek al vrij snel makkelijker te kunnen. Met een paar zinnen was hetzelfde resultaat al haalbaar. Door middel van de <details> en <summary> element kon ik via HTML de content in en uitklapbaar maken. 
+  
+Qua kleurgebruik besloot ik om het simpel te houden. Het geheel is wit en lichtgrijs. Om het overizcht niet te overwelmend te maken heb ik per huis, 1 foto gebruikt. 
+  
+Eerste poging/versie 
+![scherm 1](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen1.png)
+
