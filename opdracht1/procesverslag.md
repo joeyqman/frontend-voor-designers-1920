@@ -43,7 +43,7 @@ De site moest naar mijn mening simpel eruit zien. Hoewel ik de wit en grijze kle
 https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht1/opdracht1/img/schetsen-fvd/screen4.png
 
 **Principe 4:**
-Om principe 4: keep users in control, te verwerken heb ik een functie toegevoegd waarbij de gebruiker het overzicht ander kan indelen. Bij de default state staan de huizen in een lijst onder elkaar. De gebruiker kan er ook voor kiezen om de huizen in kolommen te zien. Dit heb ik gedaan met de column-count. Hierbij geef je de gebruiker de keuze om het overzicht naar zijn wens te veranderen. 
+Om principe 4: keep users in control, te verwerken heb ik een functie toegevoegd waarbij de gebruiker het overzicht anders kan indelen. Bij de default state staan de huizen in een lijst onder elkaar. De gebruiker kan er ook voor kiezen om de huizen in kolommen te zetten. Dit heb ik gedaan met de column-count. Hierbij geef je de gebruiker de keuze om het overzicht naar zijn wens te veranderen. 
 
 Om de huizen gedetailleerd te bekijken kan de gebruiker op de "tab" klikken waarna de content uitklapt en je details kunt zien van het huis. De gebruiker heeft ook de mogelijkheid om dit weer in te klappen wanneer het niet meer relevant is.
 
