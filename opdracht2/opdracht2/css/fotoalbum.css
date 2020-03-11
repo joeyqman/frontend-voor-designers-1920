@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {}
+
+/* Create two equal columns that floats next to each other */
+.row .left-column {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 1000px;
+
+}
+
+body .column-left:first-child {
+    width: 25%;
+
+}
+
+#linkerkolom {
+    background-color: lightgrey;
+}
+
+#linkerkolom h2 {
+    margin-left: 2vw;
+}
+
+#rechterkolom {
+    background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    display: flex;
+    column-count: 2
+}
+
+.dark-night {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dark-night p {
+    margin-left: 1vw;
+}
+
+button img {
+    width: 50%;
+}
+
+button {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 2vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 14px -6px rgba(0, 0, 0, 0.31);
+}
+
+button:hover {
+    box-shadow: 10px 10px 47px -1px rgba(0, 0, 0, 0.54);
+}
+
+div.dark-night {
+    margin-left: 1vw;
+}
+
+
+/* fotoalbum bron */
+
+.row,
+.darkmodefotos-row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column,
+.darkmodefotos-column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img,
+.darkmodefotos-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .column,
+    .darkmodefotos-row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+        {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+.darkmodefotos {
+    display: none;
+}
