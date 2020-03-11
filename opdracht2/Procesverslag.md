@@ -27,7 +27,7 @@ gevraagd of hij feedback wilde geven op mijn werk. Omdat ik het formulier niet o
 feedback formulier na-gemaakt...
 
 **Feedback:** 
-![Feedback]
+![Feedback](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/feedback.png)
 
 Bij de feedback werd vermeld dat ik de darkmode beter anders kon weergeven. Omdat ik nog erg in de flow zat van de verschillende 
 knoppen met kleuren wist ik zelf niet helemaal meer wat ik wilde. Uiteindelijk heb ik besloten om zowel de achtergrond als de fotos 
