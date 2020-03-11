@@ -12,10 +12,10 @@ Tijdens het schetsen heb ik verschillende ideetjes bedacht om het ontwerp uit te
 ik een panel met instellingen. Op deze panel zouden dan de knoppen met kleuren zitten. Deze kleuren zouden dan terugkomen op de fotos.
 
 **Schets 1:** 
-![schets 1]
+![schets 1](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/schets-1.png)
 
-**Schets 1.2:** 
-![schets 1]
+**Schets 2:** 
+![schets 2](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/schets-2.png)
 
 De grid die ik eerst zelf wou maken bleek toch moeilijker dan gedacht. Voor mijn gevoel kwam dat doordat ik de pagina wilde verdelen in
 twee kolommen. Hierdoor raakte ik zelf erg in de war en besloot ik om uiteindelijk niet te veel tijd te steken in de grid. Ik heb 
@@ -38,15 +38,20 @@ was omdat dat het meest logisch leek. Oorspronkelijk was de "L" en "D" in kleine
 om hoofdletters te gebruiken. Desalniettemin is het ook mogelijk om met kleine letters de knoppen te controleren.
 
 **04. Keep users in control**
-Ik heb deze principe toegepast door de keuze aan de gebruiker te geven om te klikken of de toetsen te gebruiken. Daarnaast krijgt de
-gebruiker de keuze om het beeld te zien in dark of light mode.
+Ik heb deze principe toegepast door de keuze aan de gebruiker te geven om te klikken of de toetsen te gebruiken. Daarnaast krijgt de gebruiker de keuze om het beeld te zien in dark of light mode.
+
+![Landingspagina](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/landing.png)
+![knoppen](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/knoppen.png)
 
 **08. Provide a natural next step**
 Door de tekst onder de knoppen kan de gebruiker inzien dat de functie ook gebruikt kan worden door middel van toetsen
 
 **09. Appearance follows behavior**
-Om niet alleen tekst te gebruiken heb ik iconen gebruikt. Een maan kan worden geassocieerd met donker/dark en een zon met light/licht.
-Hierdoor weet een gebruiker dat het scherm verandert in een van die modes. Door de verkleuring van de knoppen ziet de gebruiker contrast
+Om niet alleen tekst te gebruiken heb ik iconen gebruikt. Een maan kan worden geassocieerd met donker/dark en een zon met light/licht. Hierdoor weet een gebruiker dat het scherm verandert in een van die modes. Door de verkleuring van de knoppen ziet de gebruiker contrast
+
+![licht](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/licht.png)
+![donker](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht2/opdracht2/img/donker.png)
+
 
 
 
