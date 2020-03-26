@@ -1,23 +1,48 @@
 body {
-    height: 100vh;
+    /* beetje aangepast zodat er 2 rijen ontstaan */
+    /*    height: 100vh;*/
+    min-height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: rgb(18, 18, 22);
-    background: linear-gradient(0deg, rgba(18, 18, 22, 1) 0%, rgba(45, 45, 78, 1) 100%);
+    /*    display: flex;*/
+    /*    justify-content: space-evenly;*/
+    /*	align-items: center;*/
+    /*background: rgb(18, 18, 22);
+     background: linear-gradient(0deg, rgba(18, 18, 22, 1) 0%, rgba(45, 45, 78, 1) 100%); */
+    background: rgb(13, 13, 23);
+    background: linear-gradient(0deg, rgba(13, 13, 23, 1) 17%, rgba(31, 35, 43, 1) 100%);
+    /* hiermee gaat door elkaar heen draaien mooier */
+    transform-style: preserve-3d;
 }
+
+div.blokContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    grid-row-gap: 50px;
+    display:
+}
+
 
 body > article > section:nth-child(1) > img {
     height: 100%;
     width: 100%;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    color: white;
+    font-family: sans-serif;
+
+}
+
 h2 {
     color: white;
     position: absolute;
-    top: -100px;
+    top: -110px;
     text-align: center;
+    font-family: sans-serif;
 }
 
 p {
@@ -29,6 +54,47 @@ date {
     top: 300px;
 }
 
+.blokContent button,
+.knoppen button {
+    background: none;
+    border: none;
+}
+
+.blokContent img {
+    width: 100%;
+    height: 100%;
+}
+
+details {
+    margin-bottom: 20vh;
+    margin-top: 0;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    background-color: #272c36;
+}
+
+summary {
+    color: white;
+    font-family: sans-serif;
+    padding: 1vw;
+    background-color: #292f39;
+    box-shadow: 0px 10px 17px -8px rgba(0, 0, 0, 0.67);
+
+}
+
+.knoppen {
+    margin: 0.5vw;
+}
+
+/*lijstContent*/
+.lijstContent section {
+    color: white;
+    margin-left: 8vw;
+}
+
+.lijstContent {
+    display: none;
+}
 
 /*****************/
 /* de containers */
@@ -37,11 +103,17 @@ article {
     position: relative;
     width: 30vmin;
     height: 45vmin;
+    justify-self: center;
+    /* zodat je alle butt0ns ziet */
+    margin-bottom: 10em;
     perspective-origin: center -15vmin;
     perspective: 120vmin;
     transform-style: preserve-3d;
+    --articleHoek: 0;
 }
 
+/*
+dit moet je doen voor alle articles
 article:first-of-type {
     --articleHoek: 0;
 }
@@ -50,6 +122,7 @@ article:last-of-type {
     --articleHoek: 0;
 }
 
+*/
 /*************/
 /* de zijden */
 /*************/
@@ -73,14 +146,17 @@ article section:nth-of-type(1) {
 
 article section:nth-of-type(2) {
     transform: rotateY(calc((90 + var(--articleHoek)) * 1deg));
+    background-color: white;
 }
 
 article section:nth-of-type(3) {
     transform: rotateY(calc((180 + var(--articleHoek)) * 1deg));
+    background-color: white;
 }
 
 article section:nth-of-type(4) {
     transform: rotateY(calc((270 + var(--articleHoek)) * 1deg));
+    background-color: white;
 }
 
 /***********/
@@ -92,7 +168,7 @@ article section:nth-of-type(n+5) {
     height: 30vmin;
     left: 0;
     top: 0;
-    background-image: linear-gradient(135deg, #00ff0088, #0000ff88);
+    background-image: linear-gradient(135deg, #636375, #272c36);
     transform-origin: center center -15vmin;
     transform: rotateX(90deg) rotateZ(calc((0 - var(--articleHoek)) * 1deg));
     transition: transform 1s;
@@ -104,11 +180,12 @@ article section:nth-of-type(n+5) {
 /**************/
 /* de buttons */
 /**************/
-button {
+button.linksrechts {
     position: absolute;
-    top: 110%;
+    top: 105%;
     padding: .25em 1em;
     font: inherit;
+
 }
 
 button:first-of-type {
@@ -118,6 +195,7 @@ button:first-of-type {
 button:last-of-type {
     left: 51%;
 }
+
 
 img {
     width: 100%;

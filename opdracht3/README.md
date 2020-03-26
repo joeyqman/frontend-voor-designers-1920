@@ -1,8 +1,6 @@
 # Vragen
 
-- Als ik extra blokken wil toevoegen vervormt de hele kubus (ik heb in het middel zo'n kubus gekopieerd). Tevens komt die kubus automatisch in het middel. Ik snap niet hoe ik meer van deze kubusblokken kan maken. :(
-
- 
+- Is er een functie waarmee je de titels (h2) achter de voorste kan blurren, donkerder of transparanter kan maken zodat de focus naar de voorste titel gaat? 
 
 
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data
