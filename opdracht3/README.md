@@ -1,6 +1,8 @@
 # Vragen
 
-- Is er een functie waarmee je de titels (h2) achter de voorste kan blurren, donkerder of transparanter kan maken zodat de focus naar de voorste titel gaat? 
+- Is er een functie waarmee je de titels (h2) achter de voorste (plot, cast etc) kan blurren, donkerder of transparanter kan maken zodat de focus naar de voorste titel gaat? 
+
+
 
 
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data
