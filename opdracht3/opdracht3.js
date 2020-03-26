@@ -152,15 +152,17 @@ for (let z = 0; z < deBlokken.length; z++) {
 var lijstKnop = document.querySelector("#lijstk");
 var blokKnop = document.querySelector("#vakk");
 
-var lijstContent = document.querySelector(".lijstcontent");
+var lijstContent = document.querySelector(".lijstContent");
 var blokContent = document.querySelector(".blokContent");
 
 function doelijst() {
     blokContent.style.display = "none";
+    lijstContent.style.display = "initial";
 }
 
 function doeblokken() {
     blokContent.style.display = "grid";
+    lijstContent.style.display = "none";
 }
 
 
