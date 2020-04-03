@@ -9,18 +9,20 @@ body {
     /*background: rgb(18, 18, 22);
      background: linear-gradient(0deg, rgba(18, 18, 22, 1) 0%, rgba(45, 45, 78, 1) 100%); */
     background: rgb(13, 13, 23);
-    background: linear-gradient(0deg, rgba(13, 13, 23, 1) 17%, rgba(31, 35, 43, 1) 100%);
+    /*background: linear-gradient(0deg, rgba(13, 13, 23, 1) 17%, rgba(31, 35, 43, 1) 100%);*/
     /* hiermee gaat door elkaar heen draaien mooier */
     transform-style: preserve-3d;
 }
 
-div.blokContent {
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: flex-start;
     grid-row-gap: 50px;
-    display:
+
 }
+
+
 
 
 body > article > section:nth-child(1) > img {
@@ -43,7 +45,24 @@ h2 {
     top: -110px;
     text-align: center;
     font-family: sans-serif;
+    transition: 1s;
 }
+
+[data-positie="1"] h2 {
+    opacity: 1;
+}
+
+[data-positie="2"] h2,
+[data-positie="4"] h2 {
+    opacity: .67;
+    transform: scale(.85);
+}
+
+[data-positie="3"] h2 {
+    opacity: .33;
+    transform: scale(.7);
+}
+
 
 p {
     padding: 1vw;
@@ -54,16 +73,18 @@ date {
     top: 300px;
 }
 
-.blokContent button,
+main button,
 .knoppen button {
     background: none;
     border: none;
 }
 
-.blokContent img {
+main img {
     width: 100%;
     height: 100%;
 }
+
+
 
 details {
     margin-bottom: 20vh;
@@ -83,8 +104,11 @@ summary {
 }
 
 .knoppen {
-    margin: 0.5vw;
+    margin: 1.0vw;
+    padding-bottom: 0.5vw;
 }
+
+
 
 /*lijstContent*/
 .lijstContent section {
@@ -132,9 +156,10 @@ article section:nth-child(-n+4) {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(135deg, #ffff0088, #ff000088);
+    background-image: linear-gradient(135deg, #636375, #181b22);
     transform-origin: center center -15vmin;
     transition: transform 1s;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,17 +171,14 @@ article section:nth-of-type(1) {
 
 article section:nth-of-type(2) {
     transform: rotateY(calc((90 + var(--articleHoek)) * 1deg));
-    background-color: white;
 }
 
 article section:nth-of-type(3) {
     transform: rotateY(calc((180 + var(--articleHoek)) * 1deg));
-    background-color: white;
 }
 
 article section:nth-of-type(4) {
     transform: rotateY(calc((270 + var(--articleHoek)) * 1deg));
-    background-color: white;
 }
 
 /***********/
@@ -168,7 +190,7 @@ article section:nth-of-type(n+5) {
     height: 30vmin;
     left: 0;
     top: 0;
-    background-image: linear-gradient(135deg, #636375, #272c36);
+    background-image: linear-gradient(135deg, #3d3d4b, #000000);
     transform-origin: center center -15vmin;
     transform: rotateX(90deg) rotateZ(calc((0 - var(--articleHoek)) * 1deg));
     transition: transform 1s;

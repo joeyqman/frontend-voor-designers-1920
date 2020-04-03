@@ -1,8 +1,8 @@
 # Vragen
 
-- Is er een functie waarmee je de titels (h2) achter de voorste (plot, cast etc) kan blurren, donkerder of transparanter kan maken zodat de focus naar de voorste titel gaat? 
+- Ik heb verschillende dingen opgezocht om de twee views aan te passen met alleen CSS (zonder een nieuwe html te maken). Ik zag allemaal manieren met :after maar ik heb echt geen idee hoe of welke elementen ik moet gebruiken om alleen CSS te gebruiken.
 
-
+ps: ik ben er van bewust dat het er nog niet heel geweldig uit ziet maar ik wil de aankomende dagen/week nog wel hard aan de slag om er iets tofs van te maken :)
 
 
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data

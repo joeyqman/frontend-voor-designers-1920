@@ -91,9 +91,8 @@ const naarRechts = 90;
 /***************/
 /* het draaien */
 /***************/
-function draaien(deButton, richting) {
-    var hetArticle = deButton.parentNode,
-        huidigeArticleHoek,
+function draaien(hetArticle, richting) {
+    var huidigeArticleHoek,
         nieuweArticleHoek;
 
     huidigeArticleHoek = getComputedStyle(hetArticle).getPropertyValue("--articleHoek");
@@ -101,6 +100,32 @@ function draaien(deButton, richting) {
 
     nieuweArticleHoek = huidigeArticleHoek + richting;
     hetArticle.style.setProperty("--articleHoek", nieuweArticleHoek);
+
+    var articleSections = hetArticle.querySelectorAll("section:not(:last-of-type)");
+    if (richting == naarLinks) {
+        for (let i = 0; i < articleSections.length; i++) {
+            let huidigePositie = parseInt(articleSections[i].getAttribute("data-positie"));
+            let nieuwePositie;
+            if (huidigePositie != 1) {
+                nieuwePositie = huidigePositie - 1;
+            } else {
+                nieuwePositie = 4;
+            }
+            articleSections[i].setAttribute("data-positie", nieuwePositie);
+        }
+    } else {
+        for (let i = 0; i < articleSections.length; i++) {
+            let huidigePositie = parseInt(articleSections[i].getAttribute("data-positie"));
+            let nieuwePositie;
+            if (huidigePositie != 4) {
+                nieuwePositie = huidigePositie + 1;
+            } else {
+                nieuwePositie = 1;
+            }
+            articleSections[i].setAttribute("data-positie", nieuwePositie);
+        }
+    }
+
 }
 
 
@@ -140,20 +165,21 @@ for (let z = 0; z < deBlokken.length; z++) {
     let buttonLinks = deBlokken[z].querySelector("button:first-of-type");
     let buttonRechts = deBlokken[z].querySelector("button:last-of-type");
     buttonLinks.addEventListener("click", function () {
-        draaien(this, naarLinks);
+        draaien(this.parentNode, naarLinks);
     });
     buttonRechts.addEventListener("click", function () {
-        draaien(this, naarRechts);
+        draaien(this.parentNode, naarRechts);
     });
 }
 
-// blokken of lijst view
+// blokken of lijst view - opracht 1
 
-var lijstKnop = document.querySelector("#lijstk");
+/*var lijstKnop = document.querySelector("#lijstk");
 var blokKnop = document.querySelector("#vakk");
 
 var lijstContent = document.querySelector(".lijstContent");
 var blokContent = document.querySelector(".blokContent");
+
 
 function doelijst() {
     blokContent.style.display = "none";
@@ -167,4 +193,38 @@ function doeblokken() {
 
 
 lijstKnop.addEventListener('click', doelijst);
-blokKnop.addEventListener('click', doeblokken);
+blokKnop.addEventListener('click', doeblokken); */
+
+
+
+
+// day night - opdracht 3
+
+var donkerKnop = document.querySelector('.night');
+var lichtKnop = document.querySelector('.day');
+var bodyElement = document.querySelector('body');
+//var kopjesElement = document.querySelector('section > h2');
+var titelElement = document.querySelector('h1');
+var detailsElement = document.querySelector('details');
+var summaryElement = document.querySelector('summary');
+
+
+function donker(event) {
+    bodyElement.style.backgroundColor = "rgb(13, 13, 23)";
+    summaryElement.style.backgroundColor = "rgb(41, 47, 57)";
+    detailsElement.style.backgroundColor = "rgb(39, 44, 54)";
+    titelElement.style.color = 'white';
+}
+
+function licht(event) {
+    bodyElement.style.backgroundColor = "rgb(239, 239, 239)";
+    summaryElement.style.backgroundColor = "rgb(193, 193, 193)";
+    detailsElement.style.backgroundColor = "rgb(193, 193, 193)";
+    titelElement.style.color = 'rgb(13, 13, 23)';
+    //kopjesElement.style.color = 'rgb(13, 13, 23)';
+
+
+}
+
+donkerKnop.addEventListener("click", donker);
+lichtKnop.addEventListener("click", licht);
