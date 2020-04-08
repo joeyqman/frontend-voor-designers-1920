@@ -29,7 +29,7 @@ De knoppen hadden in eerste instantie nog een background. Ik was bang dat er and
 In opdracht 2 had ik al gebruik gemaakt van deze functie. Door de background te veranderen van kleur door middel van CSS en Javascript krijg je een dark en light mode. De code die ik eerst had geschreven bleek onnodig lang te zijn. Met hulp heb ik dit nu aangepast zodat ik in CSS de waardes kon veranderen. 
 
 ![versie 4.1 donker](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/details-donker.png)
-![versie 4.2 licht](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/instellingen.png)
+![versie 4.2 licht](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/details-licht.png)
 
 Bij zowel licht en donker heb ik gebruik gemaakt van een schaduw. Dit zorgt bij het witte scherm voor een schaduw effect en bij het donkere scherm integendeel weer voor een soort glow. Daarnaast heb ik ook bij de titels een kleine schaduw toegevoegd om te highlight welke sectie de gebruiker is.
 
