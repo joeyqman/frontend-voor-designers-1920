@@ -12,85 +12,50 @@ body {
     /*background: linear-gradient(0deg, rgba(13, 13, 23, 1) 17%, rgba(31, 35, 43, 1) 100%);*/
     /* hiermee gaat door elkaar heen draaien mooier */
     transform-style: preserve-3d;
+    font-family: sans-serif;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: flex-start;
-    grid-row-gap: 50px;
-
-}
-
-
-
-
-body > article > section:nth-child(1) > img {
-    height: 100%;
-    width: 100%;
-}
-
+/* ALGEMEEN */
 h1 {
     text-align: center;
     margin-bottom: 5vh;
     margin-top: 2vh;
     color: white;
     font-family: sans-serif;
+}
 
+p,
+li,
+date {
+    color: black;
 }
 
 h2 {
-    color: white;
-    position: absolute;
-    top: -110px;
-    text-align: center;
-    font-family: sans-serif;
-    transition: 1s;
+    color: aliceblue;
 }
 
-[data-positie="1"] h2 {
-    opacity: 1;
+/* geen list-style puntjes bij reviews, wel bij cast namen */
+article > section:nth-child(4) > ul.sterren,
+article section:nth-child(4) > ul:nth-child(3) {
+    list-style: none;
 }
 
-[data-positie="2"] h2,
-[data-positie="4"] h2 {
-    opacity: .67;
-    transform: scale(.85);
-}
+body > main > article:nth-child(2) > section:nth-child(1) > h2 {
 
-[data-positie="3"] h2 {
-    opacity: .33;
-    transform: scale(.7);
-}
-
-
-p {
-    padding: 1vw;
+    font-size: 1.25em;
 }
 
 date {
-    position: absolute;
-    top: 300px;
-}
-
-main button,
-.knoppen button {
-    background: none;
-    border: none;
-}
-
-main img {
-    width: 100%;
-    height: 100%;
+    margin-top: 1vh;
 }
 
 
-
+/* DE INSTELLINGEN */
 details {
-    margin-bottom: 20vh;
     margin-top: 0;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #272c36;
 }
 
@@ -106,24 +71,48 @@ summary {
 .knoppen {
     margin: 1.0vw;
     padding-bottom: 0.5vw;
+    background-color: none;
+    border: none;
+}
+
+#night,
+#grid,
+#day,
+#list {
+    background: none;
+    border: none;
+}
+
+/*************/
+/* grid view */
+/*************/
+
+/* HIER ONDER DE CSS VOOR DE GRID VIEW */
+body[data-view="grid"] {
+    /*background: linear-gradient(0deg, rgba(13, 13, 23, 1) 17%, rgba(31, 35, 43, 1) 100%);*/
+    /* hiermee gaat door elkaar heen draaien mooier */
+    transform-style: preserve-3d;
+}
+
+body[data-view="grid"] details {
+    margin-bottom: 20vh;
+}
+
+/****************/
+/* DE CARROUSEL */
+/****************/
+body[data-view="grid"] main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    grid-row-gap: 50px;
 }
 
 
-
-/*lijstContent*/
-.lijstContent section {
-    color: white;
-    margin-left: 8vw;
-}
-
-.lijstContent {
-    display: none;
-}
-
-/*****************/
-/* de containers */
-/*****************/
-article {
+/**************/
+/* de blokken */
+/**************/
+body[data-view="grid"] article {
     position: relative;
     width: 30vmin;
     height: 45vmin;
@@ -136,21 +125,10 @@ article {
     --articleHoek: 0;
 }
 
-/*
-dit moet je doen voor alle articles
-article:first-of-type {
-    --articleHoek: 0;
-}
-
-article:last-of-type {
-    --articleHoek: 0;
-}
-
-*/
 /*************/
 /* de zijden */
 /*************/
-article section:nth-child(-n+4) {
+body[data-view="grid"] article section:nth-child(-n + 4) {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -163,28 +141,38 @@ article section:nth-child(-n+4) {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-article section:nth-of-type(1) {
+
+body[data-view="grid"] article section:nth-of-type(1) {
     transform: rotateY(calc((0 + var(--articleHoek)) * 1deg));
+    box-shadow: 0px 17px 35px -15px rgba(68, 65, 87, 0.54);
+
 }
 
-article section:nth-of-type(2) {
+body[data-view="grid"] article section:nth-of-type(2) {
     transform: rotateY(calc((90 + var(--articleHoek)) * 1deg));
+    box-shadow: 0px 17px 35px -15px rgba(68, 65, 87, 0.54);
+
 }
 
-article section:nth-of-type(3) {
+body[data-view="grid"] article section:nth-of-type(3) {
     transform: rotateY(calc((180 + var(--articleHoek)) * 1deg));
+    box-shadow: 0px 17px 35px -15px rgba(68, 65, 87, 0.54);
+
 }
 
-article section:nth-of-type(4) {
+body[data-view="grid"] article section:nth-of-type(4) {
     transform: rotateY(calc((270 + var(--articleHoek)) * 1deg));
+    box-shadow: 0px 17px 35px -15px rgba(68, 65, 87, 0.54);
+
 }
 
 /***********/
 /* het dak */
 /***********/
-article section:nth-of-type(n+5) {
+body[data-view="grid"] article section:nth-of-type(n + 5) {
     position: absolute;
     width: 30vmin;
     height: 30vmin;
@@ -202,24 +190,300 @@ article section:nth-of-type(n+5) {
 /**************/
 /* de buttons */
 /**************/
-button.linksrechts {
-    position: absolute;
-    top: 105%;
-    padding: .25em 1em;
-    font: inherit;
 
-}
 
-button:first-of-type {
+body[data-view="grid"] article button:first-of-type {
     right: 51%;
 }
 
-button:last-of-type {
+body[data-view="grid"] article button:last-of-type {
     left: 51%;
 }
 
+/* knop gemaakt dmv code ipv img omdat je hierdoor makkelijker de active/background kan toevoegen */
 
-img {
+body[data-view="grid"] article button {
+    position: absolute;
+    top: 105%;
+    background-color: aliceblue;
+    border: 2px solid grey;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    font: inherit;
+    margin: 0vw 1vw 1vw 1vw;
+}
+
+body[data-view="grid"] article button:active {
+    background-color: grey;
+}
+
+
+/***************************/
+/* de inhoud van de zijden */
+/***************************/
+body[data-view="grid"] article h2 {
+    position: absolute;
+    top: -120px;
+    text-align: center;
+    font-family: sans-serif;
+    transition: 1s;
+}
+
+body[data-view="grid"] section[data-positie="1"] h2 {
+    opacity: 1;
+    box-shadow: 0px 13px 15px -9px rgba(140, 143, 150, 0.32);
+
+}
+
+body[data-view="grid"] section[data-positie="2"] h2,
+body[data-view="grid"] section[data-positie="4"] h2 {
+    opacity: .40;
+    transform: scale(.85);
+
+}
+
+body[data-view="grid"] section[data-positie="3"] h2 {
+    opacity: .23;
+    transform: scale(.7);
+
+}
+
+body[data-view="grid"] article img {
+    height: 100%;
     width: 100%;
-    height: auto;
+}
+
+body[data-view="grid"] article p {
+    padding: 1vw;
+}
+
+body[data-view="grid"] article ul {
+    padding: 1vw;
+}
+
+/*sterren naast de reviewnummer*/
+body[data-view="grid"] section:nth-child(4) > ul:nth-child(3) li {
+    padding-bottom: 0.6vh;
+}
+
+body[data-view="grid"] section:nth-child(4) > ul:nth-child(3) > li:nth-child(1) {
+    margin-top: 1vh;
+}
+
+body[data-view="grid"] article date {
+    position: absolute;
+    top: 300px;
+}
+
+/*************/
+/* list view */
+/*************/
+
+/* HIER ONDER DE CSS VOOR DE LIST VIEW */
+body[data-view="list"] details {
+    /* kleinere ruimte tussen de instellingen en de lijst */
+    margin-bottom: 5vh;
+}
+
+body[data-view="list"] main {
+    /* de list view is een grid met 1 kolom */
+    /* tussen de items in het grid zit steeds 2em */
+    display: grid;
+    grid-gap: 1.5em;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body[data-view="list"] article {
+    /* grid om de secties in een article naast elkaar te zetten */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 1em;
+
+    /* achtergrond voor het hele article */
+    background-image: linear-gradient(135deg, #636375, #181b22);
+}
+
+/* achtergrond voor het hele article voor licht-list view */
+body[data-view="list"][data-theme="licht"] article {
+    background-image: linear-gradient(135deg, #ffffff, #7b7b7c);
+}
+
+
+body[data-view="list"] article img {
+    /* om het plaatje niet uit te laten steken */
+    width: 60%;
+    padding: 0vh 0vh 3vh 4vh;
+}
+
+body[data-view="list"] article section:nth-child(1) > h2 {
+    padding-left: 4vh;
+}
+
+
+body[data-view="list"] article section:nth-child(4) ul:nth-child(3) {
+    display: none;
+}
+
+body[data-view="list"] article section:nth-child(4) .sterren {
+    padding-top: 2vh;
+    padding-left: 0;
+}
+
+body[data-view="list"] article section:last-of-type,
+body[data-view="list"] article button {
+    /* het dak en de buttons zijn niet nodig */
+    display: none;
+}
+
+
+body[data-view="list"] p {
+    width: 15vw;
+}
+
+/*kleurtje in de paragraaf donker theme list*/
+body[data-view="list"][data-theme="donker"] article section:nth-child(2) p {
+    background-color: #74748a;
+    padding: 2vh;
+}
+
+/*kleurtje in de paragraaf licht theme list*/
+body[data-view="list"][data-theme="licht"] article section:nth-child(2) p {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 2vh;
+}
+
+body[data-view="list"] article > section:nth-child(3) > ul {
+    padding-left: 1.5vw;
+    padding-top: 2vh;
+}
+
+
+body[data-view="list"] main > article:nth-child(2) section:nth-child(3) ul,
+main > article:nth-child(3) section:nth-child(3) ul,
+main > article:nth-child(4) section:nth-child(3) ul,
+main > article:nth-child(5) section:nth-child(3) ul,
+main > article:nth-child(6) section:nth-child(3) ul {
+    column-count: 2;
+}
+
+body[data-view="list"] main > article > section:nth-child(4) {}
+
+
+/***************/
+/* licht theme */
+/***************/
+
+/* HIER ONDER DE CSS VOOR DE LICHT MODE */
+/* standaard is het theme donker */
+/* de lay-out is voor beide themes gelijk */
+/* hier kunnen alle kleurtjes voor het theme licht worden aangepast */
+body[data-theme="licht"] {
+    background-color: rgb(239, 239, 239);
+    transition: background-color 0.5s ease;
+}
+
+body[data-theme="licht"] summary,
+body[data-theme="licht"] details {
+    background-color: rgb(193, 193, 193);
+}
+
+/* de achtergrond veranderen maar alleen toepassen bij grid view */
+body[data-theme="licht"][data-view='grid'] article section:nth-child(-n + 4) {
+    background-image: linear-gradient(135deg, #ffffff, #7b7b7c);
+}
+
+body[data-theme="licht"] article section:nth-of-type(n + 5) {
+    background-image: linear-gradient(135deg, #d7d7d7, #757575);
+}
+
+body[data-theme="licht"] h1,
+body[data-theme="licht"] p,
+body[data-theme="licht"] li,
+body[data-theme="licht"] date,
+body[data-theme="licht"] section > h2 {
+    color: rgb(13, 13, 23);
+}
+
+body[data-theme="donker"] {
+    transition: background-color 0.5s ease;
+}
+
+/***************/
+/* mediaqueries*/
+/***************/
+
+/*grid view mediaqueries*/
+
+/* wanneeer het scherm kleiner wordt, krijg je ipv 3 rijen, 2 of 1 rij */
+@media screen and (max-width: 800px) {
+    body[data-view="grid"] main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: flex-start;
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body[data-view="grid"] main {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: flex-start;
+
+    }
+}
+
+/*list view mediaqueries */
+
+
+@media screen and (max-width: 1050px) {
+    body[data-view="list"] article {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body[data-view="list"] article section:nth-child(2) > p {
+        width: 25vw;
+
+    }
+
+    body[data-view="list"] article > section:nth-child(3) > ul,
+    body[data-view="list"] article > section:nth-child(3) > h2 {
+        margin-left: 3vw;
+    }
+
+    body[data-view="list"] article section,
+    body[data-view="list"] article > section:nth-child(1) > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    body[data-view="list"] article > section:nth-child(4) ul,
+        {
+        margin-left: 0;
+    }
+
+    body[data-view="list"] article > section:nth-child(1) > img {
+        width: 90%
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    body[data-view="list"] article {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    body[data-view="list"] article > section:nth-child(2) > p {
+        width: 45vw;
+    }
 }

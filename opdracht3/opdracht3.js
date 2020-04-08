@@ -1,12 +1,4 @@
 let requestURL = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json';
-
-//var myCovers = []
-//var myTitles = []
-//var myPlots = []
-//var myDates = []
-//var myActors = []
-
-
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 
@@ -21,33 +13,32 @@ request.onload = function () {
     var plotChild = document.querySelectorAll('article section:nth-child(2)');
     var dateChild = document.querySelectorAll('article section:nth-child(2)');
     var actorsChild = document.querySelectorAll('article section:nth-child(3)');
+    var directorsChild = document.querySelectorAll('article section:nth-child(3)');
     var reviewChild = document.querySelectorAll('article section:nth-child(4)');
 
 
 
     for (let i = 0; i < movies.length; i++) {
-        //console.log(movies[i]);
-        var myCover = document.createElement('img');
-        myCover.src = movies[i].cover;
-        //        myCovers.push(myCover)
-        coverChild[i].appendChild(myCover);
-
+        console.log(movies[i]);
         var myTitle = document.createElement('h2');
         myTitle.innerHTML = movies[i].title;
         titleChild[i].appendChild(myTitle);
         //        myTitles.push(myTitle);
 
+        var myCover = document.createElement('img');
+        myCover.src = movies[i].cover;
+        //        myCovers.push(myCover)
+        coverChild[i].appendChild(myCover);
 
         var myPlot = document.createElement('p');
         myPlot.innerHTML = movies[i].plot.slice(0, 350);
         plotChild[i].appendChild(myPlot);
         //        myPlots.push(myPlot);
 
-        var myDate = document.createElement('date');
-        myDate.innerHTML = movies[i].release_date;
-        dateChild[i].appendChild(myDate);
+        // var myDate = document.createElement('date');
+        //myDate.innerHTML = movies[i].release_date;
+        //dateChild[i].appendChild(myDate);
         //        myDates.push(myDate);
-
 
         var myActors = document.createElement('ul');
         for (let x = 0; x < movies[i].actors.length; x++) {
@@ -60,6 +51,16 @@ request.onload = function () {
         //		myActor.innerHTML = innerActor;
         //        myActors.push(myActor);
 
+        /*var myDirectors = document.createElement('ul');
+        for (let x = 0; x < movies[i].directors.length; x++) {
+            let myDirector = document.createElement('li');
+            myDirector.innerHTML = movies[i].directors[x].name;
+            //			innerActor.push(' ' + movies[i].actors[x].actor_name + ' ');
+            myDirectors.appendChild(myDirector);
+        }
+        directorsChild[i].appendChild(myDirectors);
+        //		myActor.innerHTML = innerActor;
+        //        myActors.push(myActor);*/
 
         var myReviews = document.createElement('ul');
         for (let x = 0; x < movies[i].reviews.length; x++) {
@@ -69,16 +70,6 @@ request.onload = function () {
         }
         reviewChild[i].appendChild(myReviews);
     }
-
-    //    for (let i = 0; i < coverChild.length; i++) {
-    //        coverChild[i].appendChild(myCovers[i]);
-    //        titleChild[i].appendChild(myTitles[i]);
-    //        plotChild[i].appendChild(myPlots[i]);
-    //        dateChild[i].appendChild(myDates[i]);
-    //        reviewChild[i].appendChild(myActors[i]);
-    //
-    //    }
-
 }
 
 /*************************/
@@ -132,33 +123,6 @@ function draaien(hetArticle, richting) {
 /***********/
 /* buttons */
 /***********/
-//var buttonVierZijdenLinks = document.querySelector(".vierZijden button:first-of-type");
-//buttonVierZijdenLinks.addEventListener("click", function () {
-//	draaien(this, naarLinks);
-//});
-//var buttonVierZijdenRechts = document.querySelector(".vierZijden button:last-of-type");
-//buttonVierZijdenRechts.addEventListener("click", function () {
-//	draaien(this, naarRechts);
-//});
-//
-//var buttonVierZijdenMetDakLinks = document.querySelector(".vierZijden1 button:first-of-type");
-//buttonVierZijdenMetDakLinks.addEventListener("click", function () {
-//	draaien(this, naarLinks);
-//});
-//var buttonVierZijdenMetDakRechts = document.querySelector(".vierZijden1 button:last-of-type");
-//buttonVierZijdenMetDakRechts.addEventListener("click", function () {
-//	draaien(this, naarRechts);
-//});
-//
-//var buttonVierZijdenLinks1 = document.querySelector(".vierZijden2 button:first-of-type");
-//buttonVierZijdenLinks1.addEventListener("click", function () {
-//	draaien(this, naarLinks);
-//});
-//var buttonVierZijdenRechts1 = document.querySelector(".vierZijden2 button:last-of-type");
-//buttonVierZijdenRechts1.addEventListener("click", function () {
-//	draaien(this, naarRechts);
-//});
-
 var deBlokken = document.querySelectorAll('article');
 
 for (let z = 0; z < deBlokken.length; z++) {
@@ -172,59 +136,38 @@ for (let z = 0; z < deBlokken.length; z++) {
     });
 }
 
-// blokken of lijst view - opracht 1
-
-/*var lijstKnop = document.querySelector("#lijstk");
-var blokKnop = document.querySelector("#vakk");
-
-var lijstContent = document.querySelector(".lijstContent");
-var blokContent = document.querySelector(".blokContent");
-
-
-function doelijst() {
-    blokContent.style.display = "none";
-    lijstContent.style.display = "initial";
-}
-
-function doeblokken() {
-    blokContent.style.display = "grid";
-    lijstContent.style.display = "none";
-}
-
-
-lijstKnop.addEventListener('click', doelijst);
-blokKnop.addEventListener('click', doeblokken); */
-
-
-
 
 // day night - opdracht 3
+/* dit snap je denk ik wel */
+/* met de buttons wordt de waarde van het attribute data-theme van de body op donker of licht gezet */
+var donkerKnop = document.querySelector('#night');
+var lichtKnop = document.querySelector('#day');
 
-var donkerKnop = document.querySelector('.night');
-var lichtKnop = document.querySelector('.day');
-var bodyElement = document.querySelector('body');
-//var kopjesElement = document.querySelector('section > h2');
-var titelElement = document.querySelector('h1');
-var detailsElement = document.querySelector('details');
-var summaryElement = document.querySelector('summary');
-
-
-function donker(event) {
-    bodyElement.style.backgroundColor = "rgb(13, 13, 23)";
-    summaryElement.style.backgroundColor = "rgb(41, 47, 57)";
-    detailsElement.style.backgroundColor = "rgb(39, 44, 54)";
-    titelElement.style.color = 'white';
+function donker() {
+    document.body.setAttribute("data-theme", "donker");
 }
 
-function licht(event) {
-    bodyElement.style.backgroundColor = "rgb(239, 239, 239)";
-    summaryElement.style.backgroundColor = "rgb(193, 193, 193)";
-    detailsElement.style.backgroundColor = "rgb(193, 193, 193)";
-    titelElement.style.color = 'rgb(13, 13, 23)';
-    //kopjesElement.style.color = 'rgb(13, 13, 23)';
-
-
+function licht() {
+    document.body.setAttribute("data-theme", "licht");
 }
 
 donkerKnop.addEventListener("click", donker);
 lichtKnop.addEventListener("click", licht);
+
+
+// grid list
+/* dit snap je denk ik wel */
+/* met de buttons wordt de waarde van het attribute data-view van de body op grid of list gezet */
+var gridKnop = document.querySelector('#grid');
+var listKnop = document.querySelector('#list');
+
+function grid() {
+    document.body.setAttribute("data-view", "grid");
+}
+
+function list() {
+    document.body.setAttribute("data-view", "list");
+}
+
+gridKnop.addEventListener("click", grid);
+listKnop.addEventListener("click", list);

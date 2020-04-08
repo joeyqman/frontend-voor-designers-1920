@@ -7,7 +7,7 @@
     <link href="opdracht3.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-view="grid" data-theme="donker">
     <header>
         <h1>Films</h1>
         <details>
@@ -15,34 +15,61 @@
                 Instellingen
             </summary>
             <div class="knoppen">
-                <button id="vakk"><img src="img/blokken.png"></button>
-                <button id="lijstk"><img src="img/lijst.png"></button>
-                <button class="day"><img src="img/day-knop.png"></button>
-                <button class="night"><img src="img/night-knop.png"></button>
-
-
-
+                <button id="grid"><img src="img/blokken.png"></button>
+                <button id="list"><img src="img/lijst.png"></button>
+                <button id="day"><img src="img/day-knop.png"></button>
+                <button id="night"><img src="img/night-knop.png"></button>
             </div>
         </details>
     </header>
-
-
 
     <main>
         <article class="vierZijden">
             <section data-positie="1"></section> <!-- zijde 1 -->
             <section data-positie="2">
                 <h2>Plot</h2>
-            </section> <!-- zijde 2 -->
+            </section>
+
+            <!-- zijde 2 -->
             <section data-positie="3">
-                <h2>Cast</h2>
+                <h2>Cast &#38; Directors</h2>
             </section> <!-- zijde 3 -->
             <section data-positie="4">
                 <h2>Review</h2>
+                <ul class="sterren">
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;&#9734;</li>
+                </ul>
+            </section>
+            <!-- zijde 4 -->
+            <section></section> <!-- dak -->
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
+        </article>
+
+        <article class="vierZijden">
+            <section data-positie="1"></section> <!-- zijde 1 -->
+            <section data-positie="2">
+                <h2>Plot</h2>
+            </section> <!-- zijde 2 -->
+            <section data-positie="3">
+                <h2>Cast</h2>
+
+            </section> <!-- zijde 3 -->
+            <section data-positie="4">
+                <h2>Review</h2>
+                <ul class="sterren">
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                </ul>
             </section> <!-- zijde 4 -->
             <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
         </article>
 
         <article class="vierZijden">
@@ -55,10 +82,16 @@
             </section> <!-- zijde 3 -->
             <section data-positie="4">
                 <h2>Review</h2>
+                <ul class="sterren">
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                </ul>
             </section> <!-- zijde 4 -->
             <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
         </article>
 
         <article class="vierZijden">
@@ -71,10 +104,16 @@
             </section> <!-- zijde 3 -->
             <section data-positie="4">
                 <h2>Review</h2>
+                <ul class="sterren">
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                </ul>
             </section> <!-- zijde 4 -->
             <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
         </article>
 
         <article class="vierZijden">
@@ -83,14 +122,24 @@
                 <h2>Plot</h2>
             </section> <!-- zijde 2 -->
             <section data-positie="3">
-                <h2>Cast</h2>
+                <h2>Cast </h2>
             </section> <!-- zijde 3 -->
             <section data-positie="4">
                 <h2>Review</h2>
+                <ul class="sterren">
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                </ul>
             </section> <!-- zijde 4 -->
             <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
         </article>
 
         <article class="vierZijden">
@@ -99,30 +148,15 @@
                 <h2>Plot</h2>
             </section> <!-- zijde 2 -->
             <section data-positie="3">
-                <h2>Cast</h2>
+                <h2>Cast </h2>
             </section> <!-- zijde 3 -->
             <section data-positie="4">
                 <h2>Review</h2>
+                <p>nog geen reviews</p>
             </section> <!-- zijde 4 -->
             <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
-        </article>
-
-        <article class="vierZijden">
-            <section data-positie="1"></section> <!-- zijde 1 -->
-            <section data-positie="2">
-                <h2>Plot</h2>
-            </section> <!-- zijde 2 -->
-            <section data-positie="3">
-                <h2>Cast</h2>
-            </section> <!-- zijde 3 -->
-            <section data-positie="4">
-                <h2>Review</h2>
-            </section> <!-- zijde 4 -->
-            <section></section> <!-- dak -->
-            <button class="linksrechts"><img src="img/linksw-knop.png"></button>
-            <button class="linksrechts"><img src="img/rechtsw-knop.png"></button>
+            <button class="linksrechts">ᐸ</button>
+            <button class="linksrechts">ᐳ</button>
         </article>
     </main>
 
