@@ -39,7 +39,7 @@ Bij zowel licht en donker heb ik gebruik gemaakt van een schaduw. Dit zorgt bij 
 In opdracht 1 had ik gebruik gemaakt van verschillende views. Dit leek me ook gepast bij deze opdracht. Waar ik bij opdracht 1 een nieuwe html code had toegevoegd bleek dit ook makkelijk te kunnen met Javascript en CSS. Door op grid of list te klikken kan de gebruiker switchen tussen de blokken en een list view.
 
 ![versie 4.1 donker](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/listview-donker.png)
-![versie 4.2 licht](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/Screenshot%202020-04-08%2015.44.29.png)
+![versie 4.2 licht](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/details-licht.png)
 
 Beide views hebben nogsteeds de gradient die terug te vinden is bij de blokken. 
 
