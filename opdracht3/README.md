@@ -4,13 +4,15 @@ https://joeyqman.github.io/frontend-voor-designers-1920/opdracht3/index.html
 
 
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data
-opdracht 
-
+De laatste opdracth voor FvD betrefte een website waar de data wordt geroepen van een externe link door middel van JSON. Hierbij is het van belang om de verschillende principes en UIevent toe te voegen en een goed ontwerp te hebben.
 
 ## Schetsen
-Schets eerst hoe de functionaliteit er uit komt te zien. Maak daarna een breakdown-schets hoe de verschillende componenten technisch moeten gaan werken...
+De eerste les van opdracht 3 hebben we wederom geschetst. Ik had al vrij snel bedacht dat ik ronddraaiende blokken wilde. In eerste instantie wilde ik dit idee schrappen omdat het onrealistisch leek voor mij om dit te maken. Samen in overleg Met Sanne besloot ik toch om dit te proberen.
 
-Werk daarna je ontwerp uit in HTML, CSS en JavaScript.
+foto
+
+Ik had tevens nagedacht aan een soort fotoslide show idee maar uiteindelijk leek mij dit toch niet zo'n leuk idee als de ronddraaiende blokken.
+
 
 
 ## Planning
