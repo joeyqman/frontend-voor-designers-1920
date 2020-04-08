@@ -15,8 +15,6 @@ Ik had tevens nagedacht aan een soort fotoslide show idee maar uiteindelijk leek
 
 Met (veel) hulp van Sanne had ik het eerste opzetje. Hierbij wilde ik de fotos/covers op de voorkant van het blok en informatie op de andere vlakken van de kubus.
 
-![versie 1](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/schets%201.png)
-
 De knoppen van dit scherm waren nog in standaard formaat. Daarnaast waren dit nog de kleuren die Sanne aan de vlakken had gegeven. Om de gebruiker informatie te geven heb ik boven elk vlak een h2 toegevoegd. Deze titels vond ik erg chaotisch eruit zien omdat er erg weinig contrast zat tussen de voorste en de achterste titel. Uiteindelijk heb ik met hulp dit kunnen aanpassen. Uiteindelijk heb ik de links en rechts knoppen verandert naar zelfgemaakte buttons/img.
 
 ![versie 2](https://github.com/joeyqman/frontend-voor-designers-1920/blob/master/opdracht3/img/schets%201.png)
