@@ -19,7 +19,7 @@ request.onload = function () {
 
 
     for (let i = 0; i < movies.length; i++) {
-        console.log(movies[i]);
+
         var myTitle = document.createElement('h2');
         myTitle.innerHTML = movies[i].title;
         titleChild[i].appendChild(myTitle);
@@ -142,6 +142,8 @@ for (let z = 0; z < deBlokken.length; z++) {
 /* met de buttons wordt de waarde van het attribute data-theme van de body op donker of licht gezet */
 var donkerKnop = document.querySelector('#night');
 var lichtKnop = document.querySelector('#day');
+var bodyElement = document.querySelector('body');
+
 
 function donker() {
     document.body.setAttribute("data-theme", "donker");
@@ -151,8 +153,21 @@ function licht() {
     document.body.setAttribute("data-theme", "licht");
 }
 
+//UIevent met keys voor donker en licht thema
+function doeKeypress(event) {
+    var key = event.key;
+    if (key === 'd' || key === 'D') {
+        donker(event);
+    } else if (key === 'l' || key === 'L') {
+        licht(event);
+    }
+
+}
+
 donkerKnop.addEventListener("click", donker);
 lichtKnop.addEventListener("click", licht);
+bodyElement.addEventListener('keypress', doeKeypress);
+
 
 
 // grid list
@@ -169,5 +184,17 @@ function list() {
     document.body.setAttribute("data-view", "list");
 }
 
+//UIevent met keys voor lijst en grid
+function doeKeypressLG(event) {
+    var key = event.key;
+    if (key === 'g' || key === 'G') {
+        grid(event);
+    } else if (key === 'u' || key === 'U') {
+        list(event);
+    }
+
+}
+
 gridKnop.addEventListener("click", grid);
 listKnop.addEventListener("click", list);
+bodyElement.addEventListener('keypress', doeKeypressLG);
